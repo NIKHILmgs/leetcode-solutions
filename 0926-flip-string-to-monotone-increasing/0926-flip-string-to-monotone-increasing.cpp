@@ -16,6 +16,7 @@ public:
                 c0++;
             c0=min(c1,c0);
         }
+        // c0=min(c1,c0);
         cout<<c<<" "<<c1<<" "<<c0<<"\n";
         return c0;
         
