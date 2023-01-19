@@ -27,12 +27,7 @@ string d2b(int n,int s)
         unordered_map<string,int>mp;
         for(auto i:nums)
             mp[i]++;
-        
-        // vector<string>v;
-        // for(int i=1;i<=n;i++)
-        // {
-        //     v.push_back(d2b(i,s));
-        // }
+      
         string ans;
         for(int i=0;i<n;i++)
         {
