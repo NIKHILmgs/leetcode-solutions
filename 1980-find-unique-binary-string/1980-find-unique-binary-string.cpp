@@ -28,17 +28,18 @@ string d2b(int n,int s)
         for(auto i:nums)
             mp[i]++;
         
-        vector<string>v;
-        for(int i=1;i<=n;i++)
-        {
-            v.push_back(d2b(i,s));
-        }
+        // vector<string>v;
+        // for(int i=1;i<=n;i++)
+        // {
+        //     v.push_back(d2b(i,s));
+        // }
         string ans;
         for(int i=0;i<n;i++)
         {
-            if(mp.find(v[i])==mp.end())
+            string sk = (d2b(i,s));
+            if(mp.find(sk)==mp.end())
             {
-                ans=v[i];
+                ans=sk;
                 break;
             } 
         }
