@@ -1,8 +1,8 @@
 class Solution {
 public:
     int findJudge(int n, vector<vector<int>>& trust) {
-        sort(trust.begin(),trust.end());
-        int ans=-1;
+        // sort(trust.begin(),trust.end());
+        // int ans=-1;
         int arr1[n],arr2[n];
         for(int i=0;i<n;i++)
         {
