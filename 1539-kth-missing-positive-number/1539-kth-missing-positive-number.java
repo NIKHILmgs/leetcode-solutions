@@ -13,7 +13,7 @@ class Solution {
                 val++;
             }
             if(k == count){
-                return val -1;
+                return val-1;
             }
         }
         return val + (k - count) - 1;
