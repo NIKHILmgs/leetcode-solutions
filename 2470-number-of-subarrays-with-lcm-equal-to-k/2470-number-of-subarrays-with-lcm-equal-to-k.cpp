@@ -6,7 +6,7 @@ public:
         int n=nums.size();
         int ans=0;
         for (int i = 0; i < n; i++) {
-            int curr_lcm = nums[i];
+           int curr_lcm = nums[i];
              if(curr_lcm==k)
                     ans++;
             for (int j = i+1; j < n; j++) {
