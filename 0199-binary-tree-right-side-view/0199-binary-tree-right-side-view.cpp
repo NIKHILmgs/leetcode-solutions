@@ -11,19 +11,19 @@
  */
 class Solution {
 public:
-    void trav(TreeNode* root, int level, vector<int>&ans)
+    void rightview(TreeNode* root, int level, vector<int>&ans)
     {
         if(root==NULL)
             return;
         if(ans.size()==level)
             ans.push_back(root->val);
-        trav(root->right,level+1,ans);
-        trav(root->left,level+1,ans);
+        rightview(root->right,level+1,ans);
+        rightview(root->left,level+1,ans);
         
     }
     vector<int> rightSideView(TreeNode* root) {
         vector<int>ans;
-        trav(root,0,ans);
+        rightview(root,0,ans);
         return ans;
         
     }
