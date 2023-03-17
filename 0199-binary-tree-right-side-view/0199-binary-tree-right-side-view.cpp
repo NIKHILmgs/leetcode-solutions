@@ -11,6 +11,16 @@
  */
 class Solution {
 public:
+     void leftview(TreeNode* root, int level, vector<int>&ans)
+    {
+        if(root==NULL)
+            return;
+        if(ans.size()==level)
+            ans.push_back(root->val);
+        rightview(root->left,level+1,ans);
+        rightview(root->right,level+1,ans);
+        
+    }
     void rightview(TreeNode* root, int level, vector<int>&ans)
     {
         if(root==NULL)
