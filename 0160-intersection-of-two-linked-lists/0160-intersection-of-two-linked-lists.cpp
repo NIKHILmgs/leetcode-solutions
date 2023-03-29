@@ -19,7 +19,7 @@ public:
         node = headB;
         while(node)
         {
-            if(mp.find(node)!=mp.end())
+            if(mp.count(node))
                 return node;
             node = node->next;
         }
