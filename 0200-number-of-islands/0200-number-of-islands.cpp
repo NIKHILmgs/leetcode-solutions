@@ -4,7 +4,7 @@ public:
     void bfs(int row, int col, vector<vector<int>>&vis,vector<vector<char>>&grid)
     {
         vis[row][col]=1;
-         int n = grid.size(),c=0;
+         int n = grid.size();
         int m = grid[0].size();
         queue<pair<int,int>>q;
         q.push({row,col});
