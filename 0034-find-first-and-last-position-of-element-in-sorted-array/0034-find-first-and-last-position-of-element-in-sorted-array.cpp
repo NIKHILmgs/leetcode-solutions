@@ -49,10 +49,10 @@ public:
     vector<int> searchRange(vector<int>& nums, int target) {
         vector<int> ans;
         int a=fo(nums,target);
-        ans.push_back(a);
-        a=lo(nums,target);
-        ans.push_back(a);
-        return ans;
+       
+        int b=lo(nums,target);
+       
+        return {a,b};
         
     }
 };
